@@ -1,0 +1,69 @@
+/* 1. Reset podstawowych marginesów i ustawienie ładnej czcionki */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Tło całej strony - wyśrodkowanie kalkulatora na ekranie */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Ładny, delikatny gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* 3. Główny kontener kalkulatora (#background z Twojego HTML) */
+#background {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px); /* Efekt delikatnego rozmycia tła */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 400px; /* Maksymalna szerokość kalkulatora */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Równe odstępy między sekcjami */
+}
+
+/* 4. Stylizacja sekcji z wyborem i wpisywaniem (article) */
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* 5. Wygląd pól Select oraz Input */
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Efekt podświetlenia, gdy klikniesz w pole */
+select:focus, input:focus {
+    border-color: #4f46e5; /* Ładny fiolet/błękit */
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* 6. Stylizacja przycisku "Przelicz" */
+#liczonko {
+    width: 100%;
+    padding

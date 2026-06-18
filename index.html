@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+	<title> kalkulator temperatur </title>
+	
+
+</head>
+
+<script src="plik.js" defer>
+
+</script>
+
+<body>
+
+	<main id="background">
+		<article id="option-temperature">
+			<label>Co chcesz przeliczyć ?
+
+				<select id="temperature">
+					<option>--Wybierz opcje--</option>
+					<option value="K"> kelviny na celsjusze</option>
+					<option value="C">celsjusze na kelviny</option>
+				</select>
+			</label>
+		</article>
+		<article id="number-temperature">
+			<label> wartośc temperatury <input id="input-value" type="number" placeholder="np.21" min="-273.15" max="1000" step="0.01"/> </label>
+		</article>
+			<button id="liczonko" onclick="przelicz()">Przelicz: </button>
+	
+		<article id="final-temperature">
+			<p id="result"></p>
+		</article>
+
+	</main>
+
+
+</body>
+
+
+</html>
